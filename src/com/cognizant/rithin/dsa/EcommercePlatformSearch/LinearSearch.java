@@ -1,9 +1,9 @@
-package com.cognizant.rithin.dsa;
+package com.cognizant.rithin.dsa.EcommercePlatformSearch;
 
 import java.util.List;
 
-public class LinearSearch implements Search{
-    public  int find(List<Product> productList,String target) {
+public class LinearSearch implements Search {
+    public  int find(List<Product> productList, String target) {
 
         if (productList == null || target == null) {
             return -1;
@@ -13,7 +13,7 @@ public class LinearSearch implements Search{
             Product currentProduct = productList.get(i);
                if(currentProduct != null &&
                        currentProduct.getProductName()
-                       .equals(target)) {
+                       .equalsIgnoreCase(target)) {
                    return i;
                }
         }

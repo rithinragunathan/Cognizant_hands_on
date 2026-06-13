@@ -1,4 +1,4 @@
-package com.cognizant.rithin.dsa;
+package com.cognizant.rithin.dsa.EcommercePlatformSearch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,13 @@ public class Main {
         productList.add(new Product("P108", "Headphones"));
         productList.add(new Product("P109", "Printer"));
         productList.add(new Product("P110", "Webcam"));
-
+    Search search = new LinearSearch();
+    int value = search.find(productList,"webcam");
+    if(value == -1) {
+        System.out.println("Provide Proper Input");
+    }
+    else {
+        System.out.println(value);
+    }
     }
 }

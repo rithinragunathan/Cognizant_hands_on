@@ -1,4 +1,4 @@
-package com.cognizant.rithin.dsa;
+package com.cognizant.rithin.dsa.EcommercePlatformSearch;
 
 import java.util.List;
 

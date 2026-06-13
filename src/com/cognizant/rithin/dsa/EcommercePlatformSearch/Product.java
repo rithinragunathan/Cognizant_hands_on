@@ -1,10 +1,10 @@
-package com.cognizant.rithin.dsa;
+package com.cognizant.rithin.dsa.EcommercePlatformSearch;
 
 public class Product {
     private String productName;
     private String id;
 
-    public Product(String productName, String id) {
+    public Product(String id, String productName) {
         this.id = id;
         this.productName = productName;
     }
