@@ -75,7 +75,6 @@ Implementation uses ....... (recursive logic)
 ## Technology Stack
 
 - Java 21
-- IntelliJ
 - Object Oriented Programming
 - Data Structures & Algorithms
 - Design Patterns
