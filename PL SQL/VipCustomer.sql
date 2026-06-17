@@ -1,10 +1,10 @@
-ALTER TABLE CUSTOMERS
-    ADD isVip boolean;
-
 BEGIN
-    FOR cust IN ( SELECT CustomerID, Balance FROM Customers )
-        LOOP
-            IF cust.Balance > 10000 THEN UPDATE Customers SET IsVIP = 'Y' WHERE CustomerID = cust.CustomerID; END IF;
-        END LOOP;
-END;
-/
+    FOR cus in (
+        SELECT CUSTOMERS.CUSTOMERID, CUSTOMERS.NAME, LOANS.CUSTOMERID, LOANS.ENDDATE
+        FROM CUSTOMERS join LOANS on CUSTOMERS.CUSTOMERID = LOANS.CUSTOMERID where LOANS.ENDDATE = sysdate + 30)
+    loop
+            DBMS_OUTPUT.PUT_LINE(cus.NAME || ''', you''''re due date is ' || cus.ENDDATE );
+
+        end loop;
+
+end;
