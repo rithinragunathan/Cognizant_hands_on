@@ -1,2 +1,0 @@
-SELECT 'Hello World' AS MESSAGE
-FROM DUAL;
