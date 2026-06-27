@@ -1,0 +1,12 @@
+BEGIN
+    FOR cus in (
+        SELECT CUSTOMERS.CUSTOMERID, CUSTOMERS.NAME, LOANS.ENDDATE
+        FROM CUSTOMERS
+                 join LOANS on CUSTOMERS.CUSTOMERID = LOANS.CUSTOMERID
+        WHERE LOANS.ENDDATE BETWEEN SYSDATE AND SYSDATE + 30)
+        loop
+            DBMS_OUTPUT.PUT_LINE(cus.NAME || 'due date '|| TO_CHAR(cus.ENDDATE,'DD-MON-YYYY'));
+
+        end loop;
+
+end;
