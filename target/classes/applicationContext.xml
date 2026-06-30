@@ -4,8 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="bookService" class="com.cognizant.spring.service.BookService">
+    <bean id="bookService" class="com.cognizant.service.BookService">
         <property name="bookRepo" ref="bookRepo"/>
     </bean>
-    <bean id="bookRepo" class="com.cognizant.spring.repository.BookRepository"/>
+    <bean id="bookRepo" class="com.cognizant.repository.BookRepository"/>
 </beans>

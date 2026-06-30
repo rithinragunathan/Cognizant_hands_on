@@ -1,4 +1,4 @@
-package com.cognizant.repository;
+package com.cognizant.spring.repository;
 
 public class BookRepository {
     public BookRepository() {

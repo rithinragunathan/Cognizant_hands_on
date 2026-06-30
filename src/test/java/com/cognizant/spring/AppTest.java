@@ -1,4 +1,4 @@
-package com.cognizant;
+package com.cognizant.spring;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,6 +1,6 @@
-package com.cognizant.service;
+package com.cognizant.spring.service;
 
-import com.cognizant.repository.BookRepository;
+import com.cognizant.spring.repository.BookRepository;
 
 public class BookService {
     public BookService() {
@@ -12,7 +12,6 @@ public class BookService {
     public void setBookRepo(BookRepository bookRepo) {
         this.bookRepo = bookRepo;
     }
-
 }
 
 

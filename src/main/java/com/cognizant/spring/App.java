@@ -1,7 +1,6 @@
-package com.cognizant;
+package com.cognizant.spring;
 
-import com.cognizant.repository.BookRepository;
-import com.cognizant.service.BookService;
+import com.cognizant.spring.service.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
